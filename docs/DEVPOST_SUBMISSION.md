@@ -47,7 +47,7 @@ Reviewers will not clone or run the project, so the video has to show it working
 
 **Tagline (draft):** A sound-memory game you play with your hands in your own room.
 
-**What it does (plan, confirm against the build):** Pattern Pop plays a sequence of tones on a set of big pads in front of you. You repeat the sequence by pinching the pads in the same order. Each round adds one step. A wrong pad resets your streak, and the Lens tracks your current and best streak.
+**What it does (plan, confirm against the build):** Pattern Pop plays a sequence of tones on a set of big colored pads in front of you. You repeat the sequence by pinching the pads in the same order. Each round adds one step. A wrong pad resets your streak, and the Lens tracks your current and best streak.
 
 **Who it is for (draft):** Anyone who likes quick memory and rhythm games, and wants a game that uses space and sound instead of a flat screen.
 
@@ -65,10 +65,10 @@ Do not mention eye tracking, voice, real-wall placement, or saving scores as fea
 
 ## 6. Disclosure of pre-existing work (draft)
 
-- The idea is based on the owner's earlier game "Wall Tones", first made in Unity and then in a Meta Quest browser version (https://github.com/SoundGuyAI/IWSDKMetaOct2026Pub). Pattern Pop is a new project and does not reuse that code. State this in the description.
+- The idea is based on the owner's earlier game "Wall Tones", first made in Unity and then in a Meta Quest browser version (https://github.com/SoundGuyAI/IWSDKMetaOct2026Pub). Pattern Pop is a new Lens Studio project. The idea and game concept come from Wall Tones; say whether any code or assets were reused. The contest page says old code is not allowed, while the Rules allow disclosed pre-existing work, so the safest route is to reuse none and say so.
 - Any audio, models or assets reused from the earlier games or from other sources must be listed here with their license: **TO FILL (owner / build log)**.
 - Lens Studio templates, the SPECS Base Template and Snap libraries (for example Spectacles Interaction Kit) are standard tools allowed by the rules.
-- Open question for the owner: the hackathon says "new project, started during the submission period". Confirm that no Pattern Pop code or assets were created before Oct 15, 2026.
+- The Rules say the submitted work must have been built during the submission period (Oct 15 to Nov 9, 2026). The Pattern Pop repo was created on Nov 5, 2026. Disclose anything that predates it.
 
 ## 7. Demo video plan (under 3 minutes)
 
