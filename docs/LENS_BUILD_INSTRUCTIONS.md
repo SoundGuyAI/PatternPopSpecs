@@ -6,15 +6,15 @@ Read this whole file before doing anything. It is the project owner's starting b
 
 ## 1. What this project is
 
-Pattern Pop is a short memory game for glasses. The Lens plays a sequence of tones on a few big pads. The player repeats the sequence by pinching the pads in the same order. Each correct round adds one more step. A wrong pad ends the run. The game tracks the current streak and the best streak.
+Pattern Pop is a short memory game for glasses. The Lens plays a sequence of tones on a few big colored pads (Wall Tones used four). The player repeats the sequence by pinching the pads in the same order. Each correct round adds one more step. A wrong pad ends the run. The game tracks the current streak and the best streak.
 
-It is a new project for the Learn AR with SPECS hackathon (https://learn-specs.devpost.com/). It is inspired by the owner's earlier game, Wall Tones. Wall Tones was first made in Unity (no hands), and a sequel was then made for Meta Quest in the browser with IWSDK. Pattern Pop is a separate project in a different engine. The Quest/IWSDK code lives in https://github.com/SoundGuyAI/IWSDKMetaOct2026Pub (live at https://soundguyai.github.io/IWSDKMetaOct2026Pub/).
+It is a new project for the Learn AR with SPECS hackathon (https://learn-specs.devpost.com/). It is inspired by the owner's earlier game, Wall Tones: a Simon-style game where four colored pads play a growing sequence of tones and the player repeats it by touching the pads in order. Wall Tones 2 (Quest, IWSDK) lets players place the pads on a wall, a table or in the air, has a desktop mode, and has recorded male and female host voices. Wall Tones was first made in Unity (no hands), and a sequel was then made for Meta Quest in the browser with IWSDK. Pattern Pop is a separate project in a different engine. The Quest/IWSDK code lives in https://github.com/SoundGuyAI/IWSDKMetaOct2026Pub (live at https://soundguyai.github.io/IWSDKMetaOct2026Pub/).
 
 ## 2. Hard rules from the contest
 
 Source: https://learn-specs.devpost.com/ , its Rules tab and Resources tab. Re-check them before submitting, because organizers can change them. Deadline: **Nov 9, 2026, 5:00 pm US Eastern = Nov 10, 2026, 12:00 am Israel time.**
 
-- The project must be new, started during the submission period (Oct 15 to Nov 9, 2026). Old ideas are fine. Old code is not. Do not copy code from the Wall Tones repos. Lens Studio templates, assets and libraries are allowed. Anything else that already existed must be disclosed in the submission.
+- The project must be new, started during the submission period (Oct 15 to Nov 9, 2026). The contest page says old ideas are fine and old code is not. The official Rules and FAQ allow Lens Studio templates, assets, libraries and AI coding assistants, require disclosing any other pre-existing code or work, and say the work submitted must have been built during the submission period. So: build Pattern Pop fresh in Lens Studio. The Wall Tones code is browser TypeScript and does not port directly anyway. If any existing code, audio, art or text from Wall Tones is reused, list it in the submission disclosure and check with the owner first.
 - The Lens must be planned with the Devpost Learn skill pack (`plan-lens`) and built by a coding agent through the CLAD plugin, Lens Studio and the Lens Studio MCP. It must run in the Lens Studio preview. Nobody needs SPECS glasses.
 - The submission needs a public repo with the Lens Studio project files, a short description, and a public YouTube demo video under 3 minutes (a screen recording of the preview is fine).
 - Sounds, music and images must be ones we have the right to use. The video must not contain third-party trademarks or copyrighted music without permission.
