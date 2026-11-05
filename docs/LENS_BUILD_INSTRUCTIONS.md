@@ -6,9 +6,9 @@ Read this whole file before doing anything. It is the project owner's starting b
 
 ## 1. What this project is
 
-Pattern Pop is a short memory game for glasses. The Lens plays a sequence of tones on a few big colored pads (Wall Tones used four). The player repeats the sequence by pinching the pads in the same order. Each correct round adds one more step. A wrong pad ends the run. The game tracks the current streak and the best streak.
+Pattern Pop is a short memory game for glasses. The Lens plays a sequence of tones on a few big colored pads (four). The player repeats the sequence by pinching the pads in the same order. Each correct round adds one more step. A wrong pad ends the run. The game tracks the current streak and the best streak.
 
-It is a new project for the Learn AR with SPECS hackathon (https://learn-specs.devpost.com/). It is inspired by the owner's earlier game, Wall Tones: a Simon-style game where four colored pads play a growing sequence of tones and the player repeats it by touching the pads in order. Wall Tones 2 (Quest, IWSDK) lets players place the pads on a wall, a table or in the air, has a desktop mode, and has recorded male and female host voices. Wall Tones was first made in Unity (no hands), and a sequel was then made for Meta Quest in the browser with IWSDK. Pattern Pop is a separate project in a different engine. The Quest/IWSDK code lives in https://github.com/SoundGuyAI/IWSDKMetaOct2026Pub (live at https://soundguyai.github.io/IWSDKMetaOct2026Pub/).
+It is a new project for the Learn AR with SPECS hackathon (https://learn-specs.devpost.com/). It is inspired by the a Simon-style game where four colored pads play a growing sequence of tones and the player repeats it by touching the pads in order. 
 
 ## 2. Hard rules from the contest
 
