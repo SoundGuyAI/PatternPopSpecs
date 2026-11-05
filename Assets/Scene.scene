@@ -4,6 +4,10 @@
     - !<own> 00000000-0000-0065-0000-000000000064
     - !<own> 0005641c-028d-459a-0000-000000014b4d
     - !<own> f5d74682-203a-4970-81ea-9fa7b88c96bb
+    - !<own> 3da24fff-d104-45cd-a27b-a74ab0b51d24
+    - !<own> 4788b449-3dc9-45d2-9963-3d540097daec
+    - !<own> 26183271-34ac-4603-b708-45b58b0902e5
+    - !<own> ecd4b5e9-2f6e-4962-8fd6-d01eb6c58c20
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       - id: 1
@@ -234,6 +238,22 @@
     []
   Components:
     []
+- !<ScriptComponent/068ec15b-158b-45d1-83d7-c541fe6a8d4d>
+  PrefabRemaps:
+    []
+  Name: AgentInspectScript
+  Enabled: true
+  ScriptAsset: !<reference> 0b25079c-f5bf-4c6d-96c4-f43b89dfa213
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/0847d2bb-a13f-4c4a-a404-169f67308f6f>
   PrefabRemaps:
     []
@@ -496,6 +516,25 @@
     - !<own> a6af4948-9adc-4052-ae22-db902dd2764e
   Components:
     []
+- !<ScriptComponent/14232b21-80f6-4840-bec2-1f1c2e824325>
+  PrefabRemaps:
+    []
+  Name: PatternPopStreakUI
+  Enabled: true
+  ScriptAsset: !<reference> 1ae1d693-73e2-486b-8f3e-85e77fc97973
+  ScriptInputsDefault:
+    floatDuration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      trophyIcon: !<reference.Texture> 5f878594-1262-4766-9737-ad4a47688106
+      panelWidth: !<float> 18.000000
+      panelHeight: !<float> 10.000000
+      floatDuration: 1.600000
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/181c239f-175e-4912-94fc-d37a2599b2d6>
   PrefabRemaps:
     []
@@ -509,6 +548,37 @@
     HasSegmentScaleCompensation: false
   Children:
     []
+  Components:
+    []
+- !<SceneObject/1c25f137-a0fe-4a77-ae62-e306e5adb403>
+  PrefabRemaps:
+    []
+  Name: MenuPanel
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 42.000000, z: -100.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> afd56ed9-0edd-46ea-8034-c14464b0dd93
+- !<SceneObject/1f954f5b-0c93-4df6-9fbe-94416c4038ee>
+  PrefabRemaps:
+    []
+  Name: Content
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9808a3b5-054a-42fd-a663-16b2e3eac9ba
+    - !<own> 58b25944-56c6-41de-b418-d0def1a14e30
   Components:
     []
 - !<RenderMeshVisual/1f969daa-5809-4500-b314-98d91ccba131>
@@ -591,6 +661,21 @@
     []
   Components:
     []
+- !<SceneObject/26183271-34ac-4603-b708-45b58b0902e5>
+  PrefabRemaps:
+    []
+  Name: LEAF Plugin Bridge
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bc525172-a399-4911-bb8a-059cb9560465
 - !<SceneObject/264571d0-f879-411b-8deb-ff6d9921317f>
   PrefabRemaps:
     []
@@ -809,6 +894,31 @@
     - !<own> 264571d0-f879-411b-8deb-ff6d9921317f
   Components:
     []
+- !<ScriptComponent/3b197f60-ac21-4c1f-96e0-04b373c0ef6f>
+  PrefabRemaps:
+    []
+  Name: PatternPopPadController
+  Enabled: true
+  ScriptAsset: !<reference> 2890f7f1-44c6-4041-a5c8-9e8c09f7c3f9
+  ScriptInputsDefault:
+    gridCenterX: true
+    gridCenterZ: true
+    lightDuration: true
+    debugColliders: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      padsRoot: !<reference.SceneObject> 58b25944-56c6-41de-b418-d0def1a14e30
+      tableSurfaceY: !<float> -62.000000
+      gridCenterX: !<float> 0.000000
+      gridCenterZ: !<float> -110.000000
+      padSpacing: !<float> 26.000000
+      lightDuration: 0.450000
+      debugColliders: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/3b4f5057-b516-4d3b-9c8d-14c81af2f505>
   PrefabRemaps:
     []
@@ -824,6 +934,24 @@
     - !<own> 54130007-65c1-48d3-b9df-0866d8112e01
   Components:
     []
+- !<SceneObject/3da24fff-d104-45cd-a27b-a74ab0b51d24>
+  PrefabRemaps:
+    []
+  Name: PatternPop
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> d2f0c129-0523-4866-83e1-a92dbafcda45
+    - !<own> 1f954f5b-0c93-4df6-9fbe-94416c4038ee
+    - !<own> e553a937-3aee-4de5-9387-72749024fee3
+    - !<own> b77bd914-6f0a-406f-809e-d0cbca0a071b
+  Components:
+    - !<own> db4615c2-2354-4eed-a0a6-c28f4e042309
 - !<SceneObject/3de2c7ea-1525-465a-9056-68565a4014a7>
   PrefabRemaps:
     []
@@ -914,6 +1042,21 @@
     - !<own> 8fe2a532-9bf3-4cde-b598-04ce5470718d
   Components:
     []
+- !<SceneObject/4788b449-3dc9-45d2-9963-3d540097daec>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d59bb78a-2154-450f-85f4-50636960c382
 - !<SceneObject/4c195c04-c397-454e-bd08-3485f37d84fe>
   PrefabRemaps:
     []
@@ -972,6 +1115,21 @@
     HasSegmentScaleCompensation: false
   Children:
     - !<own> 46b79537-a269-46f1-9483-500d7a4170d6
+  Components:
+    []
+- !<SceneObject/58b25944-56c6-41de-b418-d0def1a14e30>
+  PrefabRemaps:
+    []
+  Name: PadsRoot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
   Components:
     []
 - !<SceneObject/58ef319f-850e-40dd-8295-e6dc36ab4854>
@@ -1560,6 +1718,21 @@
     - !<own> e9454e66-5d09-4a8a-bcd7-dea762326a48
   Components:
     []
+- !<SceneObject/9808a3b5-054a-42fd-a663-16b2e3eac9ba>
+  PrefabRemaps:
+    []
+  Name: TableSlot
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -90.000000, z: -110.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    []
 - !<SceneObject/988c408a-99dc-47e6-b7c4-efbf4bf8dc3c>
   PrefabRemaps:
     []
@@ -1636,6 +1809,21 @@
     - !<own> 46ea93d6-d161-4453-9064-6ac11e1d6523
   Components:
     []
+- !<SceneObject/a3b46527-6adc-4f67-8938-b7e7b7b1ca36>
+  PrefabRemaps:
+    []
+  Name: StreakHUD
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 48.000000, y: -35.000000, z: -100.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 14232b21-80f6-4840-bec2-1f1c2e824325
 - !<SceneObject/a4b1ce71-4840-4493-bc52-58f3c13933e1>
   PrefabRemaps:
     []
@@ -1775,6 +1963,27 @@
     - !<own> f6687ab7-52ac-408d-a892-8a9559125450
   Components:
     []
+- !<ScriptComponent/afd56ed9-0edd-46ea-8034-c14464b0dd93>
+  PrefabRemaps:
+    []
+  Name: PatternPopMenuUI
+  Enabled: true
+  ScriptAsset: !<reference> 44661394-212a-4312-828d-dccd64536da4
+  ScriptInputsDefault:
+    titleLabel: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      closeIcon: !<reference.Texture> c0457d9c-cd70-4080-b3b4-e8d032fba1a8
+      hintIcon: !<reference.Texture> bd44a58c-f513-473c-9614-d6c353cc8006
+      replayIcon: !<reference.Texture> a00ede8a-5dc4-48c9-938f-06b8aa646968
+      panelWidth: !<float> 28.000000
+      panelHeight: !<float> 22.000000
+      titleLabel: Pattern Pop
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/b22d97e6-4c06-4135-af29-d26adb2b9d86>
   PrefabRemaps:
     []
@@ -1835,6 +2044,21 @@
     - !<own> fcc185fc-4e88-4e9e-9c71-40bd83b1b0ed
   Components:
     []
+- !<SceneObject/b77bd914-6f0a-406f-809e-d0cbca0a071b>
+  PrefabRemaps:
+    []
+  Name: PadController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3b197f60-ac21-4c1f-96e0-04b373c0ef6f
 - !<SceneObject/b786dabc-29e4-4cfa-8a84-f39604ffcbdd>
   PrefabRemaps:
     []
@@ -1940,6 +2164,22 @@
     - !<own> fe93d992-1114-4f1f-8bef-0a0bbd75747d
   Components:
     []
+- !<ScriptComponent/bc525172-a399-4911-bb8a-059cb9560465>
+  PrefabRemaps:
+    []
+  Name: MessagingBridge
+  Enabled: true
+  ScriptAsset: !<reference> 9aa407db-2872-4afc-a162-cf7faf2a0f29
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/bf2095b6-c6f8-48c8-b840-e0a6cec0dc99>
   PrefabRemaps:
     []
@@ -1955,6 +2195,22 @@
     []
   Components:
     []
+- !<ScriptComponent/c4824c30-2bc6-4790-b742-fb20c198645c>
+  PrefabRemaps:
+    []
+  Name: PatternPopAudioController
+  Enabled: true
+  ScriptAsset: !<reference> a029f478-59b0-42fe-8f9d-72f917f3d0e5
+  ScriptInputsDefault:
+    sfxVolume: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      sfxVolume: !<float> 1.000000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/c8e031d3-a8a1-468a-a419-427f8556de4c>
   PrefabRemaps:
     []
@@ -2098,6 +2354,22 @@
     - !<own> bb9036be-541f-49e7-9554-c297d354da21
   Components:
     []
+- !<SceneObject/d2f0c129-0523-4866-83e1-a92dbafcda45>
+  PrefabRemaps:
+    []
+  Name: UI
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> a3b46527-6adc-4f67-8938-b7e7b7b1ca36
+    - !<own> 1c25f137-a0fe-4a77-ae62-e306e5adb403
+  Components:
+    []
 - !<ScriptComponent/d3e2fbc5-8795-4913-9af6-c8626f8e6d9c>
   PrefabRemaps:
     []
@@ -2133,6 +2405,22 @@
     - !<own> 38562bff-09c5-4232-bff1-7ea62a1e7ec5
   Components:
     []
+- !<ScriptComponent/d59bb78a-2154-450f-85f4-50636960c382>
+  PrefabRemaps:
+    []
+  Name: LeafIndex
+  Enabled: true
+  ScriptAsset: !<reference> 154e5b8f-2995-4481-9b55-524f4a89a3a5
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/d5f63266-b1ce-419f-847b-3c9f347b3ee2>
   PrefabRemaps:
     []
@@ -2208,6 +2496,38 @@
     - !<own> f74a6bbb-4fba-4d8b-9b4e-64dd1c3e9ac3
   Components:
     []
+- !<ScriptComponent/db4615c2-2354-4eed-a0a6-c28f4e042309>
+  PrefabRemaps:
+    []
+  Name: PatternPopMain
+  Enabled: true
+  ScriptAsset: !<reference> a4d64efb-976f-4b25-a6ce-98fbbf54c889
+  ScriptInputsDefault:
+    stepInterval: true
+    postSequencePause: true
+    roundClearPause: true
+    missRestartPause: true
+    filterHits: true
+    debugColliders: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      streakUI: !<MappingBased.AssignableType_1> 14232b21-80f6-4840-bec2-1f1c2e824325
+      menuUI: !<MappingBased.AssignableType_2> afd56ed9-0edd-46ea-8034-c14464b0dd93
+      audio: !<MappingBased.AssignableType_3> c4824c30-2bc6-4790-b742-fb20c198645c
+      pads: !<MappingBased.AssignableType_4> 3b197f60-ac21-4c1f-96e0-04b373c0ef6f
+      tableSlot: !<reference.SceneObject> 9808a3b5-054a-42fd-a663-16b2e3eac9ba
+      floatTarget: !<reference.SceneObject> 1c25f137-a0fe-4a77-ae62-e306e5adb403
+      stepInterval: 0.600000
+      postSequencePause: 0.400000
+      roundClearPause: 0.550000
+      missRestartPause: 1.800000
+      filterHits: true
+      debugColliders: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/dcc36a33-e23d-48f3-8e96-f9c9fd3cd030>
   PrefabRemaps:
     []
@@ -2288,6 +2608,21 @@
     - !<own> 6a7a67db-5675-49bb-8f31-ba0588e3cffc
   Components:
     []
+- !<SceneObject/e553a937-3aee-4de5-9387-72749024fee3>
+  PrefabRemaps:
+    []
+  Name: AudioController
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> c4824c30-2bc6-4790-b742-fb20c198645c
 - !<DeviceTracking/e5553c8a-0b7e-4ef4-92d9-3e1318fb82c1>
   PrefabRemaps:
     []
@@ -2351,6 +2686,21 @@
     Fingers_length: 0.000000
     Thumb_inflate: 0.000000
     Thumb_length: 0.000000
+- !<SceneObject/ecd4b5e9-2f6e-4962-8fd6-d01eb6c58c20>
+  PrefabRemaps:
+    []
+  Name: AiPreviewAgent Handler
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 068ec15b-158b-45d1-83d7-c541fe6a8d4d
 - !<SceneObject/f0394c5d-4c44-4c65-a77c-e1c7e05ca905>
   PrefabRemaps:
     []

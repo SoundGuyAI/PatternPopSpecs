@@ -1,0 +1,67 @@
+- !<AssetImportMetadata/def78ce2-390a-46c4-9eb9-255b174ee5e1>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 44661394-212a-4312-828d-dccd64536da4
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 44661394-212a-4312-828d-dccd64536da4
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 111d277e-a315-4ee7-814c-5b1e836050c1
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/111d277e-a315-4ee7-814c-5b1e836050c1>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 359a9bd0-e013-4d6b-a36e-7acf48ea6bb6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    closeIcon: false
+    hintIcon: false
+    panelHeight: false
+    panelWidth: false
+    replayIcon: false
+    titleLabel: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - closeIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      hintIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      replayIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      panelWidth: !<float> 0.000000
+      panelHeight: !<float> 0.000000
+      titleLabel: Pattern Pop
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PatternPopMenuUI – Quit / Hint / Replay</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Texture closeIcon {"hint":"Close icon for Quit"}'
+    - '// @input Asset.Texture hintIcon {"hint":"Lightbulb icon for Hint"}'
+    - '// @input Asset.Texture replayIcon {"hint":"Replay icon for Replay pattern"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float panelWidth {"hint":"Menu panel width in cm", "widget":"slider", "min":18, "max":40, "step":1}'
+    - '// @input float panelHeight {"hint":"Menu panel height in cm", "widget":"slider", "min":14, "max":32, "step":1}'
+    - '// @input string titleLabel = "Pattern Pop" {"hint":"Title shown at top of the menu"}'
+    - '// @ui {"widget":"group_end"}'

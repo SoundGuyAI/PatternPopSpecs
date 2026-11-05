@@ -1,0 +1,61 @@
+- !<AssetImportMetadata/e0f26772-4502-424c-8aff-51032e54ea5f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 1ae1d693-73e2-486b-8f3e-85e77fc97973
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 1ae1d693-73e2-486b-8f3e-85e77fc97973
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e87a35a7-8fad-4d8c-b959-9d1683e23a42
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e87a35a7-8fad-4d8c-b959-9d1683e23a42>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 81b1c44f-5848-47e9-a6d9-9d62d69258e7
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    floatDuration: false
+    panelHeight: false
+    panelWidth: false
+    trophyIcon: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - trophyIcon: !<reference.Texture> 00000000-0000-0000-0000-000000000000
+      panelWidth: !<float> 0.000000
+      panelHeight: !<float> 0.000000
+      floatDuration: 1.600000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PatternPopStreakUI – table-side streak HUD</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input Asset.Texture trophyIcon {"hint":"Trophy icon texture for the streak header"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float panelWidth {"hint":"Panel width in cm", "widget":"slider", "min":10, "max":30, "step":1}'
+    - '// @input float panelHeight {"hint":"Panel height in cm", "widget":"slider", "min":6, "max":20, "step":1}'
+    - '// @input float floatDuration = 1.6 {"hint":"Seconds for the miss score float toward the menu", "widget":"slider", "min":0.5, "max":3, "step":0.1}'
+    - '// @ui {"widget":"group_end"}'

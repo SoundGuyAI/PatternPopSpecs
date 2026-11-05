@@ -1,0 +1,85 @@
+- !<AssetImportMetadata/9709ab60-3abd-48bd-8d22-08732ffd2204>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a4d64efb-976f-4b25-a6ce-98fbbf54c889
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a4d64efb-976f-4b25-a6ce-98fbbf54c889
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 37982c57-7f9b-4e81-a16a-5f406f3f3fba
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/37982c57-7f9b-4e81-a16a-5f406f3f3fba>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 77cf312f-15ff-4291-8f92-adafce15448c
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audio: false
+    debugColliders: false
+    filterHits: false
+    floatTarget: false
+    menuUI: false
+    missRestartPause: false
+    pads: false
+    postSequencePause: false
+    roundClearPause: false
+    stepInterval: false
+    streakUI: false
+    tableSlot: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - streakUI: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      menuUI: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      pads: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      tableSlot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      floatTarget: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      stepInterval: 0.600000
+      postSequencePause: 0.400000
+      roundClearPause: 0.550000
+      missRestartPause: 1.800000
+      filterHits: true
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PatternPopMain – game orchestrator</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 streakUI {"hint":"Streak HUD next to the pads"}'
+    - '// @input AssignableType_2 menuUI {"hint":"Menu high above the table"}'
+    - '// @input AssignableType_3 audio {"hint":"Audio controller"}'
+    - '// @input AssignableType_4 pads {"hint":"Pad controller"}'
+    - '// @input SceneObject tableSlot {"hint":"Legacy virtual-table slot — cleared at boot; pads use World Query instead"}'
+    - '// @input SceneObject floatTarget {"hint":"World-space target for the miss score float (usually the menu root)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float stepInterval = 0.6 {"hint":"Seconds between sequence pad steps", "widget":"slider", "min":0.35, "max":1, "step":0.05}'
+    - '// @input float postSequencePause = 0.4 {"hint":"Pause after sequence before accepting input", "widget":"slider", "min":0.2, "max":1.2, "step":0.05}'
+    - '// @input float roundClearPause = 0.55 {"hint":"Pause after a correct round before growing the pattern", "widget":"slider", "min":0.2, "max":1.5, "step":0.05}'
+    - '// @input float missRestartPause = 1.8 {"hint":"Pause after a miss before restarting a new pattern", "widget":"slider", "min":0.5, "max":2.5, "step":0.1}'
+    - '// @input bool filterHits = true {"hint":"Smooth World Query hit results"}'
+    - '// @input bool debugColliders {"hint":"Show collider wireframes on startup"}'
+    - '// @ui {"widget":"group_end"}'

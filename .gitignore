@@ -7,3 +7,6 @@
 # END Lens Studio managed Agents-Docs block
 
 *.esproj.*.lock
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json

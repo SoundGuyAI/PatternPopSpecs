@@ -1,0 +1,70 @@
+- !<AssetImportMetadata/048a8d5a-e303-4a45-868b-41efa3ecc80f>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 2890f7f1-44c6-4041-a5c8-9e8c09f7c3f9
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 2890f7f1-44c6-4041-a5c8-9e8c09f7c3f9
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> e32731b7-11ff-48e5-a9fd-303f1c7d2bc2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/e32731b7-11ff-48e5-a9fd-303f1c7d2bc2>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 0f040b91-15b5-407f-9522-10a44c37f22d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    debugColliders: false
+    gridCenterX: false
+    gridCenterZ: false
+    lightDuration: false
+    padSpacing: false
+    padsRoot: false
+    tableSurfaceY: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - padsRoot: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      tableSurfaceY: !<float> -50.000000
+      gridCenterX: !<float> 0.000000
+      gridCenterZ: !<float> -110.000000
+      padSpacing: !<float> 28.000000
+      lightDuration: 0.450000
+      debugColliders: false
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"<span style=\"color: #60A5FA;\">PatternPopPadController – 2×2 pads</span>"}'
+    - '// @ui {"widget":"separator"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input SceneObject padsRoot {"hint":"Parent under which pads are created (authored Content/Pads root)"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float tableSurfaceY = -50 {"hint":"World Y of the table top surface (cm)", "widget":"slider", "min":-120, "max":0, "step":1}'
+    - '// @input float gridCenterX {"hint":"World X of pad grid center", "widget":"slider", "min":-40, "max":40, "step":1}'
+    - '// @input float gridCenterZ = -110 {"hint":"World Z of pad grid center", "widget":"slider", "min":-160, "max":-40, "step":1}'
+    - '// @input float padSpacing = 28 {"hint":"Center-to-center spacing between pads (cm)", "widget":"slider", "min":26, "max":40, "step":1}'
+    - '// @input float lightDuration = 0.45 {"hint":"How long a pad stays lit during sequence / feedback (s)", "widget":"slider", "min":0.2, "max":1, "step":0.05}'
+    - '// @input bool debugColliders {"hint":"Show collider wireframes"}'
+    - '// @ui {"widget":"group_end"}'
